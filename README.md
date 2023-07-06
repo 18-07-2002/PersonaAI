@@ -1,6 +1,6 @@
-# MyGPT
+# PersonaAI
 ---
-title: MYGPT,
+title: PersonaAI,
 emoji: 🔥,
 colorFrom: red,
 colorTo: indigo,
