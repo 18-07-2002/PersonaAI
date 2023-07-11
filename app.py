@@ -18,11 +18,11 @@ def predict(
     chatbot=[],
     history=[],
 ):
-    # headers = {
-    #     "Content-Type": "application/json",
-    #     "Authorization": f"Bearer {openai_api_key}"
-    # }
-    headers ={}
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {openai_api_key}"
+    }
+    # headers ={}
 
     print(f"system message is ^^ {system_msg}")
     if system_msg.strip() == "":
@@ -242,7 +242,7 @@ with gr.Blocks(
 
         chatbot = gr.Chatbot(label="Jessica", elem_id="chatbot")
         inputs = gr.Textbox(
-            placeholder="Hi there!", label="Type an input and press Enter"
+            placeholder="Hi there!", label="Type an Prompt and press Enter"
         )
         state = gr.State([])
         with gr.Row():
